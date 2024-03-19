@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Testing for developers</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/nwwz.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/tomorrow-night-blue.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Testing for developers</h1>
+					<h2>The many things developers can do</h2>
+				</section>
+
+				<section data-banner="Introduction">
+					<h1>We have all heard these</h1>
+
+					<blockquote class="fragment">Code complete, only testing is left</blockquote>
+					<blockquote class="fragment">Works on my machine!</blockquote>
+                    <blockquote class="fragment">I have nothing to do, there is only testing</blockquote>
+				</section>
+
+				<section data-banner="Introduction">
+                    <h1>But also</h1>
+                    <blockquote class="fragment">This code is like my own child</blockquote>
+				</section>
+				<section data-transition="none-in fade-out" data-banner="Introduction">
+                    <h2>Don't yeet it!</h2>
+					<img class="r-stretch"  data-src="yeet.jpg">
+                    Testing is a developer responsibility too.
+				</section>
+
+                <section>
+                    <h1>About me</h1>
+
+                    <h4>Dad, husband, developer, cyclist & metalhead</h4>
+                    <h4>22 years in software ranging from technical automation & desktop applications to SaaS solutions</h4>
+                    <h4>Independent consultant (.NET wat we zoeken) for almost 5 years</h4>
+                    <span>jos@netwatwezoeken.nl</span>
+                    <span>blog.netwatwezoeken.nl</span>
+                    <span>@softwarejos</span>
+                </section>
+
+                <section>
+                    <h1>Agenda</h1>
+                    <ol>
+                        <li>Why test</li>
+                        <li>Unit testing</li>
+                        <li>Other types of tests</li>
+                        <li>What a dev can do</li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <section>
+                        <h1>Why test?</h1>
+                    </section>
+                    <section tagcloud bw data-banner="Why test?">
+                        Functional
+                        Performance
+                        Regression
+                        Can we release?
+                        Have documentation
+                        Identify new opportunities
+                        Are we done?
+                        Feedback on design
+                    </section>
+                    <section data-banner="Why test?">
+                        <h2>Developer benefits</h2>
+                        <ul>
+                            <li>Know about regression while coding</li>
+                            <li>Untestable code might hint at suboptimal code</li>
+                            <li>Knowing it's done instead of hoping</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Unit testing</h1>
+                    </section>
+                    <section data-banner="Unit testing">
+                        <h2>Frameworks</h2>
+                        <ul>
+                            <li>xUnit: my preferred goto, very clean</li>
+                            <li>NUnit: a good port from JUnit</li>
+                            <li>MStest: never used it</li>
+                        </ul>
+                        <aside class="notes">
+                            xUnit: Applied lessons learned from NUnit
+                            JUnit: By Erich Gamma and Kent Beck (Extreme Programming Explained, Test-Driven Development & Tidy First?)
+                            MSTest: v1 was missing features (like parameterized tests) and just never looked at it again. v2 seems to be way better
+                        </aside>
+                    </section>
+                    <section data-banner="Unit testing">
+                        <h1>Test doubles</h1>
+                        <ul>
+                            <li>Dummy: to just fill in a parameter</li>
+                            <li>Fake/shim: a actual working implementation</li>
+                            <li>Stubs: give a specified answer</li>
+                            <li>Spies: a stubs that also records calls made</li>
+                            <li>Mock: have pre-programmed expected behavior</li>
+                        </ul>
+                        <aside class="notes">
+                            Example of a Fake is Entity Framework In memory DB
+                            Mocks: coupling tests to implementations
+                            Mock objects always use behavior verification, a stub can go either way.
+                            🔗 Mocks (verify behaviour) Aren't Stubs (verify state) by Martin Fowler https://martinfowler.com/articles/mocksArentStubs.html
+                        </aside>
+                    </section>
+                    <section data-banner="Unit testing > Test doubles">
+                        <h2>Test double tools</h2>
+                        <ul>
+                            <li>Moq: to just fill in a parameter</li>
+                            <li>NSubstitute: a actual working implementation</li>
+                            <li>MS Fakes: use it for fakes</li>
+                        </ul>
+                        <aside class="notes">
+                            Moq vs NSubstitute (the latter feel a bit cleaner to me)
+                            I mainly use NSubstitute to create Stubs and Spies.
+                        </aside>
+                    </section>
+                    <section data-banner="Unit testing > Test doubles">
+                        <h2>Stub, Spy Mock</h2>
+                        Example with NSubstitute
+                    </section>
+                    <section data-banner="Unit testing > Test doubles">
+                        <h2>Fake/Shim</h2>
+                        Example with Microsoft Fakes
+                    </section>
+                    <section data-banner="Unit testing">
+                        <h1>Sociable and solitary</h1>
+                        <ul>
+                            <li>Couple tests to code</li>
+                            <li>Test on domain level</li>
+                        </ul>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-banner="Unit testing">
+                        <h1>Other tools</h1>
+                        <ul>
+                            <li>AutoFixture: create object using the builder pattern</li>
+                            <li>Bogus: fake data generator</li>
+                            <li>Verify: snapshot testing</li>
+                        </ul>
+                        <aside class="notes">
+                            Maybe add and example for each
+                        </aside>
+                    </section>
+                    <section data-banner="Unit testing > Other tools">
+                        <h2>Autofixture</h2>
+                        Example A Dummy for example
+                    </section>
+                    <section data-banner="Unit testing > Other tools">
+                        <h2>Bogus</h2>
+                        Example
+                    </section>
+                    <section data-banner="Unit testing > Other tools">
+                        <h2>Verify</h2>
+                        Example
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>The pyramid</h1>
+                        <ul>
+                            <li>Unit tests</li>
+                            <li>Integration tests</li>
+                            <li>End to end tests</li>
+                            <li>System integration tests</li>
+                            <li>System end 2 end tests</li>
+                        </ul>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <section data-transition="none-out slide-in">
+                        <h1>Manual or automatic?</h1>
+                        <ul>
+                            <li>Costs of building</li>
+                            <li>Costs of running</li>
+                            <li>Accuracy of reruns</li>
+                            <li>Exploratory testing</li>
+                        </ul>
+                        
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-transition="fade-in none-out">
+                        <img  class="r-stretch"  data-src="automate all the things.jpg">
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                </section>
+                <section>
+                    <h2>Integration testing</h2>
+                    WebApplication factory with in memory DB and Verify for json responses
+                    <aside class="notes">
+                    </aside>
+                </section>
+                <section>
+                    <h2>End 2 end testing</h2>
+                    WebApplication factory
+                    Testcontainers
+                    Playwright
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>End 2 end testing</h2>
+                    WebApplication factory
+                    Testcontainers
+                    Playwright
+                    <aside class="notes">
+                    </aside>
+                </section>
+            </div>
+            <div class="bottom">{.NET wat we zoeken}</div>
+        </div>
+        <script src="dist/reveal.js"></script>
+        <script src="plugin/notes/notes.js"></script>
+        <script src="plugin/markdown/markdown.js"></script>
+        <script src="plugin/highlight/highlight.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                 highlight: {
+                     highlightOnLoad: false
+                 },
+                hash: true,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes],
+                dependencies: [
+                    { src: 'plugin/tagcloud/tagcloud.js', async: true }
+                ],
+                showNotes: false,
+                pdfMaxPagesPerSlide: 1,
+                pdfSeparateFragments: false
+            }).then(() => {
+                const highlight = Reveal.getPlugin( 'highlight' );
+                highlight.highlightBlock(document.getElementById("fb"));
+            });
+
+            Reveal.addEventListener( 'ready', function( event ) {
+                var banners = '<div id="banners"><header \/><\/div>';
+                $('section').each(function (index, slide ) {
+                    if ($(slide).children('section').length == 0) {
+                        var bannerText = $(slide).closest('[data-banner]').data('banner');
+                        if (bannerText) {
+                            var background = $(slide.slideBackgroundElement);
+                            background.append(banners);
+                            background.find('header').text(bannerText);
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
