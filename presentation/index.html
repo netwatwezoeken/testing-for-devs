@@ -21,7 +21,7 @@
 					<h2>The many things developers can do</h2>
 				</section>
 
-				<section data-banner="Introduction">
+				<section data-breadcrumb="Introduction">
 					<h1>We have all heard these</h1>
 
 					<blockquote class="fragment">Code complete, only testing is left</blockquote>
@@ -29,11 +29,11 @@
                     <blockquote class="fragment">I have nothing to do, there is only testing</blockquote>
 				</section>
 
-				<section data-banner="Introduction">
+				<section data-breadcrumb="Introduction">
                     <h1>But also</h1>
                     <blockquote class="fragment">This code is like my own child</blockquote>
 				</section>
-				<section data-transition="none-in fade-out" data-banner="Introduction">
+				<section data-transition="none-in fade-out" data-breadcrumb="Introduction">
                     <h2>Don't yeet it!</h2>
 					<img class="r-stretch"  data-src="yeet.jpg">
                     Testing is a developer responsibility too.
@@ -53,18 +53,32 @@
                 <section>
                     <h1>Agenda</h1>
                     <ol>
-                        <li>Why test</li>
-                        <li>Unit testing</li>
-                        <li>Other types of tests</li>
-                        <li>What a dev can do</li>
+                        <li>Why test?</li>
+                        <li>Knowledge
+                            <ol>
+                                <li>Unit testing</li>
+                                <li>Integration testing</li>
+                                <li>End 2 end testing</li>
+                            </ol>
+                        </li>
+                        <li>Behaviour
+                            <ol>
+                                <li>Before coding</li>
+                                <li>After coding</li>
+                                <li>During coding</li>
+                            </ol>
+                        </li>
                     </ol>
                 </section>
                 
                 <section>
                     <section>
                         <h1>Why test?</h1>
+                        <aside class="notes">
+                            A PosIt exercise to find out about the ideas in this group
+                        </aside>
                     </section>
-                    <section tagcloud bw data-banner="Why test?">
+                    <section tagcloud bw data-breadcrumb="Why test?">
                         Functional
                         Performance
                         Regression
@@ -74,7 +88,7 @@
                         Are we done?
                         Feedback on design
                     </section>
-                    <section data-banner="Why test?">
+                    <section data-breadcrumb="Why test?">
                         <h2>Developer benefits</h2>
                         <ul>
                             <li>Know about regression while coding</li>
@@ -88,7 +102,7 @@
                     <section>
                         <h1>Unit testing</h1>
                     </section>
-                    <section data-banner="Unit testing">
+                    <section data-breadcrumb="Knowledge > Unit testing">
                         <h2>Frameworks</h2>
                         <ul>
                             <li>xUnit: my preferred goto, very clean</li>
@@ -99,9 +113,10 @@
                             xUnit: Applied lessons learned from NUnit
                             JUnit: By Erich Gamma and Kent Beck (Extreme Programming Explained, Test-Driven Development & Tidy First?)
                             MSTest: v1 was missing features (like parameterized tests) and just never looked at it again. v2 seems to be way better
+                            bUnit: Unit testing for Blazor
                         </aside>
                     </section>
-                    <section data-banner="Unit testing">
+                    <section data-breadcrumb="Knowledge > Unit testing">
                         <h1>Test doubles</h1>
                         <ul>
                             <li>Dummy: to just fill in a parameter</li>
@@ -117,7 +132,7 @@
                             🔗 Mocks (verify behaviour) Aren't Stubs (verify state) by Martin Fowler https://martinfowler.com/articles/mocksArentStubs.html
                         </aside>
                     </section>
-                    <section data-banner="Unit testing > Test doubles">
+                    <section data-breadcrumb="Knowledge > Unit testing > Test doubles">
                         <h2>Test double tools</h2>
                         <ul>
                             <li>Moq: to just fill in a parameter</li>
@@ -129,15 +144,15 @@
                             I mainly use NSubstitute to create Stubs and Spies.
                         </aside>
                     </section>
-                    <section data-banner="Unit testing > Test doubles">
-                        <h2>Stub, Spy Mock</h2>
+                    <section data-breadcrumb="Knowledge > Unit testing > Test doubles">
+                        <h2>Stub, Spy & Mock</h2>
                         Example with NSubstitute
                     </section>
-                    <section data-banner="Unit testing > Test doubles">
+                    <section data-breadcrumb="Knowledge > Unit testing > Test doubles">
                         <h2>Fake/Shim</h2>
                         Example with Microsoft Fakes
                     </section>
-                    <section data-banner="Unit testing">
+                    <section data-breadcrumb="Knowledge > Unit testing">
                         <h1>Sociable and solitary</h1>
                         <ul>
                             <li>Couple tests to code</li>
@@ -146,33 +161,30 @@
                         <aside class="notes">
                         </aside>
                     </section>
-                    <section data-banner="Unit testing">
+                    <section data-breadcrumb="Knowledge > Unit testing">
                         <h1>Other tools</h1>
                         <ul>
                             <li>AutoFixture: create object using the builder pattern</li>
                             <li>Bogus: fake data generator</li>
                             <li>Verify: snapshot testing</li>
                         </ul>
-                        <aside class="notes">
-                            Maybe add and example for each
-                        </aside>
                     </section>
-                    <section data-banner="Unit testing > Other tools">
+                    <section data-breadcrumb="Knowledge > Unit testing > Other tools">
                         <h2>Autofixture</h2>
                         Example A Dummy for example
                     </section>
-                    <section data-banner="Unit testing > Other tools">
+                    <section data-breadcrumb="Knowledge > Unit testing > Other tools">
                         <h2>Bogus</h2>
                         Example
                     </section>
-                    <section data-banner="Unit testing > Other tools">
+                    <section data-breadcrumb="Knowledge > Unit testing > Other tools">
                         <h2>Verify</h2>
                         Example
                     </section>
                 </section>
 
                 <section>
-                    <section>
+                    <section data-breadcrumb="Knowledge">
                         <h1>The pyramid</h1>
                         <ul>
                             <li>Unit tests</li>
@@ -186,7 +198,7 @@
                     </section>
                 </section>
                 <section>
-                    <section data-transition="none-out slide-in">
+                    <section data-transition="none-out slide-in" data-breadcrumb="Knowledge">
                         <h1>Manual or automatic?</h1>
                         <ul>
                             <li>Costs of building</li>
@@ -204,13 +216,47 @@
                         </aside>
                     </section>
                 </section>
-                <section>
-                    <h2>Integration testing</h2>
-                    WebApplication factory with in memory DB and Verify for json responses
-                    <aside class="notes">
-                    </aside>
+                <section data-breadcrumb="Knowledge">
+                    <section>
+                        <h1>Integrated testing</h1>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing">
+                        WebApplication factory
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing">
+                        In memory DB
+                        <aside class="notes">
+                            Caveats like the difference in .Include()
+                            https://www.jimmybogard.com/avoid-in-memory-databases-for-tests/
+                        </aside>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing">
+                        Testcontainers
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing">
+                        Test data management
+                        Setup on xUnit fixture
+                        Respawn
+                        <aside class="notes">
+                            https://github.com/jbogard/respawn
+                        </aside>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing">
+                        Use Verify
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing">
+                        Use Respawn
+                        <aside class="notes">
+                        </aside>
+                    </section>
                 </section>
-                <section>
+                <section data-breadcrumb="Knowledge > End 2 end testing">
                     <h2>End 2 end testing</h2>
                     WebApplication factory
                     Testcontainers
@@ -219,13 +265,94 @@
                     </aside>
                 </section>
 
-                <section>
-                    <h2>End 2 end testing</h2>
-                    WebApplication factory
-                    Testcontainers
-                    Playwright
+                <section data-breadcrumb="Behaviour">
+                    <h1>Semantics</h1>
                     <aside class="notes">
                     </aside>
+                </section>
+
+                <section data-breadcrumb="Behaviour > Semantics">
+                    <section>
+                        <h1>Done</h1>
+                        <aside class="notes">
+                            A PosIt exercise to find out about the ideas in this group
+                        </aside>
+                    </section>
+                    <section tagcloud bw data-breadcrumb="Behaviour > Semantics > Done">
+                        Code complete
+                        Users using it
+                        Ready to release
+                        Ready for review
+                        Ready for accept
+                        Well documented
+                        At a certain quality
+                        <aside class="notes">
+                            Hopefully this is the outcome
+                        </aside>
+                    </section>
+                </section>
+
+                <section data-breadcrumb="Behaviour > Semantics">
+                    <section>
+                        <h1>Quality</h1>
+                        <aside class="notes">
+                            A PosIt exercise to find out about the ideas in this group
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > Semantics > Quality">
+                        <blockquote>Inspection does not improve the quality, nor guarantee quality. Inspection is too late. The quality, good or bad, is already in the product. As Harold F. Dodge said, “You can not inspect quality into a product.”. - John Hunter</blockquote>
+                    </section>
+                </section>
+
+                <section data-breadcrumb="Behaviour">
+                    <section>
+                        <h1>Before coding</h1>
+                        <aside class="notes">
+                            Ask the group
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > Before coding">
+                        <h1>With a tester go through acceptance criteria</h1>
+                        <ul>
+                            <li>Add details</li>
+                            <li>Add edge cases and "bad weather scenarios"</li>
+                            <li>Determine test scenario's</li>
+                            <li>Agree on who automates what and when</li>
+                        </ul>
+                    </section>
+                    <section data-breadcrumb="Behaviour > Before coding">
+                        Refining acceptance criteria exercises
+                    </section>
+                    <section data-breadcrumb="Behaviour > Before coding">
+                        Test plan exercises
+                    </section>
+                </section>
+
+                <section data-breadcrumb="Behaviour">
+                    <section>
+                        <h1>During coding</h1>
+                        <aside class="notes">
+                            Ask the group
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > During coding">
+                        <h4>Communicate and validate assumptions made</h4>
+                        <br/>The tester is your first sparring partner
+                    </section>
+                    <section data-breadcrumb="Behaviour > During coding">
+                        <h4>Discuss newly found scenario's or edge cases</h4>
+                        <ul>
+                            <li>Is this really part of this user story? No make a followup and move on.</li>
+                            <li>Able to make a decision together, perfect</li>
+                            <li>Don't hesitate to ask the product owner</li>
+                        </ul>
+                    </section>
+                    <section data-breadcrumb="Behaviour > During coding">
+                        <h4>Reached a point where exploratory testing can begin?</h4> <br/>Make it available for the tester then!
+                    </section>
+                    <section data-breadcrumb="Behaviour > During coding">
+                        <h4>Run you test suite a lot!</h4> <br/>VS Live Unit tests or Rider Continuous Testing
+                    </section>
                 </section>
             </div>
             <div class="bottom">{.NET wat we zoeken}</div>
@@ -262,7 +389,7 @@
                 var banners = '<div id="banners"><header \/><\/div>';
                 $('section').each(function (index, slide ) {
                     if ($(slide).children('section').length == 0) {
-                        var bannerText = $(slide).closest('[data-banner]').data('banner');
+                        var bannerText = $(slide).closest('[data-breadcrumb]').data('breadcrumb');
                         if (bannerText) {
                             var background = $(slide.slideBackgroundElement);
                             background.append(banners);
