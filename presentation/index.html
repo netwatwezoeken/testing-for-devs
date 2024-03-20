@@ -36,18 +36,22 @@
 				<section data-transition="none-in fade-out" data-breadcrumb="Introduction">
                     <h2>Don't yeet it!</h2>
 					<img class="r-stretch"  data-src="yeet.jpg">
-                    Testing is a developer responsibility too.
+                    Take care of it!
 				</section>
 
                 <section>
                     <h1>About me</h1>
 
                     <h4>Dad, husband, developer, cyclist & metalhead</h4>
-                    <h4>22 years in software ranging from technical automation & desktop applications to SaaS solutions</h4>
-                    <h4>Independent consultant (.NET wat we zoeken) for almost 5 years</h4>
-                    <span>jos@netwatwezoeken.nl</span>
-                    <span>blog.netwatwezoeken.nl</span>
-                    <span>@softwarejos</span>
+
+                    <h4>Independent consultant for almost 5 years</h4>
+                    
+                    <h4>22 years in software.
+                        Ranging from technical automation <br />
+                        to desktop applications to SaaS solutions</h4>                    
+                    
+                    <br /><span>✉️ jos@netwatwezoeken.nl</span>
+                    <br /><span>📃 blog.netwatwezoeken.nl</span>
                 </section>
 
                 <section>
@@ -73,7 +77,7 @@
                 
                 <section>
                     <section>
-                        <h1>Why test?</h1>
+                        <h2 style="color: #4dba85;">Why test?</h2>
                         <aside class="notes">
                             A PosIt exercise to find out about the ideas in this group
                         </aside>
@@ -86,7 +90,7 @@
                         Have documentation
                         Identify new opportunities
                         Are we done?
-                        Feedback on design
+                        Feedback on design or drive the design
                     </section>
                     <section data-breadcrumb="Why test?">
                         <h2>Developer benefits</h2>
@@ -99,7 +103,7 @@
                 </section>
 
                 <section>
-                    <section>
+                    <section data-breadcrumb="Knowledge">
                         <h1>Unit testing</h1>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing">
@@ -186,6 +190,8 @@
                 <section>
                     <section data-breadcrumb="Knowledge">
                         <h1>The pyramid</h1>
+                    </section>
+                    <section data-breadcrumb="Knowledge">
                         <ul>
                             <li>Unit tests</li>
                             <li>Integration tests</li>
@@ -193,7 +199,11 @@
                             <li>System integration tests</li>
                             <li>System end 2 end tests</li>
                         </ul>
+                        <br />Add image!
                         <aside class="notes">
+                            Explain about the costs
+                                - when you run them
+                                - how long they run
                         </aside>
                     </section>
                 </section>
@@ -221,47 +231,55 @@
                         <h1>Integrated testing</h1>
                     </section>
                     <section  data-breadcrumb="Knowledge > Integration testing">
-                        WebApplication factory
+                         ASP.NET built-in WebApplicationFactory
                         <aside class="notes">
                         </aside>
                     </section>
                     <section  data-breadcrumb="Knowledge > Integration testing">
-                        In memory DB
+                        EntitifyFramework In memory DB
                         <aside class="notes">
                             Caveats like the difference in .Include()
                             https://www.jimmybogard.com/avoid-in-memory-databases-for-tests/
                         </aside>
                     </section>
                     <section  data-breadcrumb="Knowledge > Integration testing">
-                        Testcontainers
+                        Leverage Docker with Testcontainers
                         <aside class="notes">
                         </aside>
                     </section>
                     <section  data-breadcrumb="Knowledge > Integration testing">
                         Test data management
-                        Setup on xUnit fixture
-                        Respawn
                         <aside class="notes">
-                            https://github.com/jbogard/respawn
                         </aside>
                     </section>
-                    <section  data-breadcrumb="Knowledge > Integration testing">
+                    <section  data-breadcrumb="Knowledge > Integration testing > Test data management">
+                        Fixtures in xUnit, be in on control of shared context
+                        <aside class="notes">
+                            Default behavior
+                            Class Fixtures
+                            Collection fixtures
+                        </aside>
+                    </section>
+                    <section  data-breadcrumb="Knowledge > Integration testing > Test data management">
                         Use Verify
                         <aside class="notes">
+                            https://github.com/VerifyTests/Verify
                         </aside>
                     </section>
-                    <section  data-breadcrumb="Knowledge > Integration testing">
+                    <section  data-breadcrumb="Knowledge > Integration testing > Test data management">
                         Use Respawn
                         <aside class="notes">
+                            https://github.com/jbogard/respawn
                         </aside>
                     </section>
                 </section>
                 <section data-breadcrumb="Knowledge > End 2 end testing">
                     <h2>End 2 end testing</h2>
-                    WebApplication factory
+                    WebApplicationFactory
                     Testcontainers
                     Playwright
                     <aside class="notes">
+                        An exercise or demo can be given here
                     </aside>
                 </section>
 
@@ -340,6 +358,13 @@
                         <br/>The tester is your first sparring partner
                     </section>
                     <section data-breadcrumb="Behaviour > During coding">
+                        <h4>Do TDD</h4>
+                        <br/>The scenarios are known. Let those tests drive your design!
+                        <aside class="notes">
+                            This could be a workshop on it's own
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > During coding">
                         <h4>Discuss newly found scenario's or edge cases</h4>
                         <ul>
                             <li>Is this really part of this user story? No make a followup and move on.</li>
@@ -353,6 +378,57 @@
                     <section data-breadcrumb="Behaviour > During coding">
                         <h4>Run you test suite a lot!</h4> <br/>VS Live Unit tests or Rider Continuous Testing
                     </section>
+                </section>
+
+                <section data-breadcrumb="Behaviour">
+                    <section>
+                        <h1>After coding</h1>
+                        <aside class="notes">
+                            Ask the group
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > After coding">
+                        <h4>Communicate and validate assumptions made</h4>
+                        <br/>The tester is your first sparring partner
+                    </section>
+                    <section data-breadcrumb="Behaviour > After coding">
+                        <h4>Do TDD</h4>
+                        <br/>The scenarios are known. Let those tests drive your design!
+                        <aside class="notes">
+                            This could be a workshop on it's own
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > After coding">
+                        <h4>Discuss newly found scenario's or edge cases</h4>
+                        <ul>
+                            <li>Is this really part of this user story? No make a followup and move on.</li>
+                            <li>Able to make a decision together, perfect</li>
+                            <li>Don't hesitate to ask the product owner</li>
+                        </ul>
+                    </section>
+                    <section data-breadcrumb="Behaviour > After coding">
+                        <h4>Reached a point where exploratory testing can begin?</h4> <br/>Make it available for the tester then!
+                    </section>
+                    <section data-breadcrumb="Behaviour > After coding">
+                        <h4>Run you test suite a lot!</h4> 
+                        <br/>Runs tests on each change
+                        <aside class="notes">
+                            - Visual Studio Live Unit tests or Rider Continuous Testing
+                            - Remember WebApplicationFactory and how easy integration tests can be run from within the IDE?
+                        </aside>
+                    </section>
+                </section>
+
+                <section data-breadcrumb="Conclusions, take aways">
+                    Ask everyone for onw take way or give my own summary here
+                </section>
+
+                <section data-breadcrumb="Feedback">
+                    Feedback on this talk, session or me?
+                </section>
+
+                <section>
+                    <h1>Thanks!</h1>
                 </section>
             </div>
             <div class="bottom">{.NET wat we zoeken}</div>
