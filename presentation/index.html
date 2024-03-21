@@ -18,13 +18,15 @@
 			<div class="slides">
 				<section>
 					<h1>Testing for developers</h1>
-					<h2>The many things developers can do</h2>
+					<h2 style="color: #4dba85;">things developers can do in testing</h2>
+                    <br>
+                    <span>Jos Hendriks { <span style="color: #d8a0df;">.NET wat we zoeken</span> }</span>
 				</section>
 
 				<section data-breadcrumb="Introduction">
 					<h1>We have all heard these</h1>
 
-					<blockquote class="fragment">Code complete, only testing is left</blockquote>
+					<blockquote class="fragment">Code complete, only needs testing</blockquote>
 					<blockquote class="fragment">Works on my machine!</blockquote>
                     <blockquote class="fragment">I have nothing to do, there is only testing</blockquote>
 				</section>
@@ -41,17 +43,15 @@
 
                 <section>
                     <h1>About me</h1>
-
-                    <h4>Dad, husband, developer, cyclist & metalhead</h4>
-
-                    <h4>Independent consultant for almost 5 years</h4>
-                    
+                    <br /><h4 style="color: #4dba85;">Jos Hendriks</h4>
+                    <h4>dad | husband | cyclist | metalhead</h4>
+                    <h4 style="color: #4dba85;">Independent developer, architect, techlead</h4>
                     <h4>22 years in software.
                         Ranging from technical automation <br />
-                        to desktop applications to SaaS solutions</h4>                    
+                        to building SaaS solutions</h4>                    
                     
                     <br /><span>✉️ jos@netwatwezoeken.nl</span>
-                    <br /><span>📃 blog.netwatwezoeken.nl</span>
+                    <br /><span>📃 netwatwezoeken.nl</span>
                 </section>
 
                 <section>
@@ -59,11 +59,13 @@
                     <ol>
                         <li>Why test?</li>
                         <li>Knowledge
-                            <ol>
+                            <ul>
                                 <li>Unit testing</li>
+                                <li>Concepts</li>
                                 <li>Integration testing</li>
-                                <li>End 2 end testing</li>
-                            </ol>
+                                <li>Semantics</li>
+                                <li>Quality</li>
+                            </ul>
                         </li>
                         <li>Behaviour
                             <ol>
@@ -82,21 +84,26 @@
                             A PosIt exercise to find out about the ideas in this group
                         </aside>
                     </section>
-                    <section tagcloud bw data-breadcrumb="Why test?">
-                        Functional
-                        Performance
-                        Regression
-                        Can we release?
-                        Have documentation
-                        Identify new opportunities
-                        Are we done?
-                        Feedback on design or drive the design
+                    <section tagcloud bw shuffle large data-breadcrumb="Why test?">
+                        <span tagcloud-weight="13">Functional </span>
+                        <span tagcloud-weight="12">Performance </span>
+                        <span tagcloud-weight="12">Detect regression </span>
+                        <span tagcloud-weight="20">Can we release? </span>
+                        <span tagcloud-weight="15">Are we done? </span>
+                        <span tagcloud-weight="15">Tests as documentation </span>
+                        <span tagcloud-weight="12">Drive the design </span>
+                        <span tagcloud-weight="10">Uncover new opportunities </span>
+                        <aside>
+                            The Deployment Pipeline is a machine that helps us do that, by organising
+                            our software development work, to go from Commit to Releasable Outcome as quickly and
+                            efficiently as possible, repeatably and reliably.
+                        </aside>
                     </section>
                     <section data-breadcrumb="Why test?">
                         <h2>Developer benefits</h2>
                         <ul>
                             <li>Know about regression while coding</li>
-                            <li>Untestable code might hint at suboptimal code</li>
+                            <li>Untestable code might hint at be suboptimal</li>
                             <li>Knowing it's done instead of hoping</li>
                         </ul>
                     </section>
@@ -220,9 +227,47 @@
                         <aside class="notes">
                         </aside>
                     </section>
-                    <section data-transition="fade-in none-out">
+                    <section data-transition="fade-in none-out"data-breadcrumb="Knowledge > Automate">
                         <img  class="r-stretch"  data-src="automate all the things.jpg">
                         <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Automate">
+                        <h3>Automation is required in any pipeline</h3>
+                        <blockquote>The Deployment Pipeline is a <strong>machine</strong> that helps us to go from Commit to Releasable Outcome as quickly and
+                            efficiently as possible, repeatably and reliably. <br>- Dave Farley</blockquote>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Automate">
+                        <h3>Is test automation a testing discipline?</h3>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Automate > Test automation for testers">
+                        <h1>No!</h1>
+                        Translating test scenarios into code is a developer discipline!
+                        <aside class="notes">
+                            Or at least, developers know this trick pretty wel for any other thing they need to build....
+                            Let's work on this together!
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Automate">
+                        <h3>So, do we need testers?</h3>
+                        <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Automate > Do we need testers">
+                        <h1>Yes!</h1>
+                        <ul>
+                            <li>They know what to test</li>
+                            <li>They know when to test</li>
+                            <li>They define scenarios</li>
+                            <li>They find edge cases</li>
+                            <li>They generally just break stuff 😋</li>
+                        </ul>
+                        <aside class="notes">
+                            Or at least, developers know this trick pretty wel for any other thing they need to build....
                         </aside>
                     </section>
                 </section>
@@ -318,7 +363,8 @@
                         </aside>
                     </section>
                     <section data-breadcrumb="Behaviour > Semantics > Quality">
-                        <blockquote>Inspection does not improve the quality, nor guarantee quality. Inspection is too late. The quality, good or bad, is already in the product. As Harold F. Dodge said, “You can not inspect quality into a product.”. - John Hunter</blockquote>
+                        <blockquote>Inspection does not improve the quality, nor guarantee quality. Inspection is too late. The quality, good or bad, is already in the product. <br/>
+                            As Harold F. Dodge said, “You can not inspect quality into a product.”. - John Hunter</blockquote>
                     </section>
                 </section>
 
@@ -389,13 +435,17 @@
                     </section>
                     <section data-breadcrumb="Behaviour > After coding">
                         <h4>Communicate and validate assumptions made</h4>
-                        <br/>The tester is your first sparring partner
                     </section>
                     <section data-breadcrumb="Behaviour > After coding">
-                        <h4>Do TDD</h4>
-                        <br/>The scenarios are known. Let those tests drive your design!
+                        <h4>Pair up with the tester</h4>
+                        <ul>
+                            <li>Together do the exploratory tests and automate new scenarios</li>
+                            <li>Automate new scenario's</li>
+                            <li>Fix any found bugs directly, create a failing test first!</li>
+                        </ul>
                         <aside class="notes">
-                            This could be a workshop on it's own
+                            - IMO exploratory testing can uncover scenarios that need automation
+                            - In my opinion an automated CI/CD pipeline should give definitive feedback. By it's nature exploratory testing cannot not be part of that.
                         </aside>
                     </section>
                     <section data-breadcrumb="Behaviour > After coding">
