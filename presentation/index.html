@@ -137,10 +137,12 @@
                             <li>Mock: have pre-programmed expected behavior</li>
                         </ul>
                         <aside class="notes">
-                            Example of a Fake is Entity Framework In memory DB
-                            Mocks: coupling tests to implementations
-                            Mock objects always use behavior verification, a stub can go either way.
-                            🔗 Mocks (verify behaviour) Aren't Stubs (verify state) by Martin Fowler https://martinfowler.com/articles/mocksArentStubs.html
+                            <ul>
+                                <li>Example of a Fake is Entity Framework In memory DB</li>
+                                <li>Mocks: coupling tests to implementations</li>
+                                <li>Mock objects always use behavior verification, a stub can go either way.</li>
+                                <li>🔗 Mocks (verify behaviour) Aren't Stubs (verify state) by Martin Fowler https://martinfowler.com/articles/mocksArentStubs.html</li>
+                            </ul>
                         </aside>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing > Test doubles">
@@ -151,8 +153,11 @@
                             <li>MS Fakes: use it for fakes</li>
                         </ul>
                         <aside class="notes">
-                            Moq vs NSubstitute (the latter feel a bit cleaner to me)
-                            I mainly use NSubstitute to create Stubs and Spies.
+                            <ul>
+                                <li>Moq vs NSubstitute (the latter feel a bit cleaner to me)</li>
+                                <li>I mainly use NSubstitute to create Stubs and Spies.</li>
+                            </ul>                           
+                            
                         </aside>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing > Test doubles">
@@ -170,6 +175,16 @@
                             <li>Test on domain level</li>
                         </ul>
                         <aside class="notes">
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Unit testing">
+                        <h1>Coverage</h1>
+                        <ul>
+                            <li>Code coverage</li>
+                            <li>Mutation testing</li>
+                        </ul>
+                        <aside class="notes">
+                            
                         </aside>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing">
@@ -209,8 +224,10 @@
                         <br />Add image!
                         <aside class="notes">
                             Explain about the costs
-                                - when you run them
-                                - how long they run
+                            <ul>
+                                <li>when you run them</li>
+                                <li>how long they run</li>
+                            </ul>
                         </aside>
                     </section>
                 </section>
@@ -300,9 +317,11 @@
                     <section  data-breadcrumb="Knowledge > Integration testing > Test data management">
                         Fixtures in xUnit, be in on control of shared context
                         <aside class="notes">
-                            Default behavior
-                            Class Fixtures
-                            Collection fixtures
+                            <ul>
+                                <li>Default behavior</li>
+                                <li>Class Fixtures</li>
+                                <li>Collection fixtures</li>
+                            </ul>
                         </aside>
                     </section>
                     <section  data-breadcrumb="Knowledge > Integration testing > Test data management">
@@ -400,14 +419,23 @@
                         </aside>
                     </section>
                     <section data-breadcrumb="Behaviour > During coding">
-                        <h4>Communicate and validate assumptions made</h4>
-                        <br/>The tester is your first sparring partner
-                    </section>
-                    <section data-breadcrumb="Behaviour > During coding">
                         <h4>Do TDD</h4>
                         <br/>The scenarios are known. Let those tests drive your design!
                         <aside class="notes">
-                            This could be a workshop on it's own
+                            <ul>
+                                <li>This could be a workshop on it's own</li>
+                                <li>Mention software teaming (mob programming)</li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section data-breadcrumb="Behaviour > During coding">
+                        <h4>Communicate and validate assumptions made</h4>
+                        <br/>The tester is your first sparring partner
+                        <aside class="notes">
+                            <ul>
+                                <li>TDD is hard, but doing is the only way of learning it.</li>
+                                <li>Coding katas!</li>
+                            </ul>
                         </aside>
                     </section>
                     <section data-breadcrumb="Behaviour > During coding">
@@ -444,8 +472,10 @@
                             <li>Fix any found bugs directly, create a failing test first!</li>
                         </ul>
                         <aside class="notes">
-                            - IMO exploratory testing can uncover scenarios that need automation
-                            - In my opinion an automated CI/CD pipeline should give definitive feedback. By it's nature exploratory testing cannot not be part of that.
+                            <ul>
+                                <li>IMO exploratory testing can uncover scenarios that need automation</li>
+                                <li>In my opinion an automated CI/CD pipeline should give definitive feedback. By it's nature exploratory testing cannot not be part of that.</li>
+                            </ul>
                         </aside>
                     </section>
                     <section data-breadcrumb="Behaviour > After coding">
@@ -463,8 +493,10 @@
                         <h4>Run you test suite a lot!</h4> 
                         <br/>Runs tests on each change
                         <aside class="notes">
-                            - Visual Studio Live Unit tests or Rider Continuous Testing
-                            - Remember WebApplicationFactory and how easy integration tests can be run from within the IDE?
+                            <ul>
+                                <li>Visual Studio Live Unit tests or Rider Continuous Testing</li>
+                                <li>Remember WebApplicationFactory and how easy integration tests can be run from within the IDE?</li>
+                            </ul>
                         </aside>
                     </section>
                 </section>
