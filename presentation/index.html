@@ -41,7 +41,7 @@
                     Take care of it!
 				</section>
 
-                <section>
+                <section data-visibility="hidden">
                     <h1>About me</h1>
                     <br /><h4 style="color: #4dba85;">Jos Hendriks</h4>
                     <h4>dad | husband | cyclist | metalhead</h4>
@@ -102,9 +102,9 @@
                     <section data-breadcrumb="Why test?">
                         <h2>Developer benefits</h2>
                         <ul>
-                            <li>Know about regression while coding</li>
-                            <li>Untestable code might hint at be suboptimal</li>
-                            <li>Knowing it's done instead of hoping</li>
+                            <li>Know about regression before pushing code</li>
+                            <li>Untestable code is feedback on design</li>
+                            <li>Knowing it's done instead of hoping it is over</li>
                         </ul>
                     </section>
                 </section>
@@ -118,13 +118,15 @@
                         <ul>
                             <li>xUnit: my preferred goto, very clean</li>
                             <li>NUnit: a good port from JUnit</li>
-                            <li>MStest: never used it</li>
+                            <li>MStest: never used it, why should I?</li>
+                            <li>TUnit: new kid on the block</li>
                         </ul>
                         <aside class="notes">
                             xUnit: Applied lessons learned from NUnit
                             JUnit: By Erich Gamma and Kent Beck (Extreme Programming Explained, Test-Driven Development & Tidy First?)
                             MSTest: v1 was missing features (like parameterized tests) and just never looked at it again. v2 seems to be way better
                             bUnit: Unit testing for Blazor
+                            TUnit: uses sourcee generation
                         </aside>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing">
@@ -156,8 +158,8 @@
                             <ul>
                                 <li>Moq vs NSubstitute (the latter feel a bit cleaner to me)</li>
                                 <li>I mainly use NSubstitute to create Stubs and Spies.</li>
-                            </ul>                           
-                            
+                            </ul>
+
                         </aside>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing > Test doubles">
@@ -169,22 +171,13 @@
                         Example with Microsoft Fakes
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing">
-                        <h1>Sociable and solitary</h1>
-                        <ul>
-                            <li>Couple tests to code</li>
-                            <li>Test on domain level</li>
-                        </ul>
-                        <aside class="notes">
-                        </aside>
-                    </section>
-                    <section data-breadcrumb="Knowledge > Unit testing">
                         <h1>Coverage</h1>
                         <ul>
                             <li>Code coverage</li>
                             <li>Mutation testing</li>
                         </ul>
                         <aside class="notes">
-                            
+
                         </aside>
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing">
@@ -197,7 +190,7 @@
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing > Other tools">
                         <h2>Autofixture</h2>
-                        Example A Dummy for example
+                        A Dummy for example
                     </section>
                     <section data-breadcrumb="Knowledge > Unit testing > Other tools">
                         <h2>Bogus</h2>
@@ -210,25 +203,55 @@
                 </section>
 
                 <section>
-                    <section data-breadcrumb="Knowledge">
-                        <h1>The pyramid</h1>
-                    </section>
-                    <section data-breadcrumb="Knowledge">
+                    <section data-breadcrumb="Knowledge > Types & Shapes">
+                        <h1>Test types</h1>
                         <ul>
+                            <li>Static analysis</li>
                             <li>Unit tests</li>
-                            <li>Integration tests</li>
+                            <li>Integration tests (verify correctness of our service in an isolated fashion)</li>
+                            <li>Integrated tests (will pass or failed based on another system)</li>
                             <li>End to end tests</li>
-                            <li>System integration tests</li>
-                            <li>System end 2 end tests</li>
                         </ul>
-                        <br />Add image!
+                        <br />
                         <aside class="notes">
+                            Spotify: https://engineering.atspotify.com/2018/01/testing-of-microservices/
+                            Integrated tests
+
                             Explain about the costs
                             <ul>
                                 <li>when you run them</li>
                                 <li>how long they run</li>
                             </ul>
                         </aside>
+                    </section>
+                    <section data-breadcrumb="Knowledge > Types & Shapes">
+                        <h1>Sociable and solitary</h1>
+                        <img class="r-stretch"  data-src="sociable-unit-tests.png">
+                        <aside class="notes">
+                            Refer to Extreme programming where test + code result in verification and confidence. " When I have written all the test I can imagine could possibly break and they all pass, I'm certain my code is correct. Other tests mght break, but at least I can point to what the system actually does as demonstrated by the tests.
+                        </aside>
+                    </section>
+                    <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
+                        <h2>Pyramid 🐪</h2>
+                        <img class="r-stretch"  data-src="test-pyramid.png">
+                    </section>
+                    <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
+                        <h2>Honeycomb 🐝</h2>
+                        <img class="r-stretch"  data-src="microservices-testing-honeycomb-2.png">
+                    </section>
+                    <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
+                        <h2>Trophy 🏆</h2>
+                        <img class="r-stretch"  data-src="The Testing Trophy.jpeg">
+                        <aside class="notes">
+                            https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications
+                            https://x.com/kentcdodds/status/960723172591992832
+                        </aside>
+                    </section>
+                    <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
+                        <blockquote cite="https://x.com/searls/status/1393385209089990659">
+                            <img class="r-stretch"  data-src="Justin Searls.png">
+                        </blockquote>
+
                     </section>
                 </section>
                 <section>
@@ -490,7 +513,7 @@
                         <h4>Reached a point where exploratory testing can begin?</h4> <br/>Make it available for the tester then!
                     </section>
                     <section data-breadcrumb="Behaviour > After coding">
-                        <h4>Run you test suite a lot!</h4> 
+                        <h4>Run you test suite a lot!</h4>
                         <br/>Runs tests on each change
                         <aside class="notes">
                             <ul>
