@@ -125,6 +125,7 @@ gulp.task('plugins', () => {
         { name: 'RevealNotes', input: './plugin/notes/plugin.js', output: './plugin/notes/notes' },
         { name: 'RevealZoom', input: './plugin/zoom/plugin.js', output: './plugin/zoom/zoom' },
         { name: 'RevealMath', input: './plugin/math/plugin.js', output: './plugin/math/math' },
+        { name: 'RevealLoadContent', input: './node_modules/reveal.js-plugins/loadcontent/plugin.js', output: './plugin/loadcontent/loadcontent' },
     ].map( plugin => {
         return rollup({
                 cache: cache[plugin.input],
@@ -263,8 +264,10 @@ gulp.task('eslint', () => gulp.src(['./js/**', 'gulpfile.js'])
 gulp.task('test', gulp.series( 'eslint', 'qunit' ))
 
 gulp.task('default', gulp.series(gulp.parallel('js', 'css', 'plugins'), 'test'))
+    //, 'copy-reveal-plugins', 'reveal-plugins'), 'test'))
 
 gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
+    //, 'copy-reveal-plugins', 'reveal-plugins'))
 
 gulp.task('package', gulp.series(() =>
 

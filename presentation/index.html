@@ -48,8 +48,8 @@
                     <h4 style="color: #4dba85;">Independent developer, architect, techlead</h4>
                     <h4>22 years in software.
                         Ranging from technical automation <br />
-                        to building SaaS solutions</h4>                    
-                    
+                        to building SaaS solutions</h4>
+
                     <br /><span>✉️ jos@netwatwezoeken.nl</span>
                     <br /><span>📃 netwatwezoeken.nl</span>
                 </section>
@@ -76,7 +76,7 @@
                         </li>
                     </ol>
                 </section>
-                
+
                 <section>
                     <section>
                         <h2 style="color: #4dba85;">Why test?</h2>
@@ -226,7 +226,8 @@
                     </section>
                     <section data-breadcrumb="Knowledge > Types & Shapes">
                         <h1>Sociable and solitary</h1>
-                        <img class="r-stretch"  data-src="sociable-unit-tests.png">
+                        <br />
+                        <div data-load="Sociable.svg"></div>
                         <aside class="notes">
                             Refer to Extreme programming where test + code result in verification and confidence. " When I have written all the test I can imagine could possibly break and they all pass, I'm certain my code is correct. Other tests mght break, but at least I can point to what the system actually does as demonstrated by the tests.
                         </aside>
@@ -263,7 +264,7 @@
                             <li>Accuracy of reruns</li>
                             <li>Exploratory testing</li>
                         </ul>
-                        
+
                         <aside class="notes">
                         </aside>
                     </section>
@@ -542,8 +543,8 @@
         <script src="plugin/notes/notes.js"></script>
         <script src="plugin/markdown/markdown.js"></script>
         <script src="plugin/highlight/highlight.js"></script>
-
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.1.2/svg.min.js"></script>
+        <script src="plugin/loadcontent/loadcontent.js"></script>
         <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
@@ -554,7 +555,7 @@
                  },
                 hash: true,
                 // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes],
+                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealLoadContent],
                 dependencies: [
                     { src: 'plugin/tagcloud/tagcloud.js', async: true }
                 ],
