@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="171.77742mm"
+   height="141.46376mm"
+   viewBox="0 0 171.77742 141.46376"
+   id="pyramid"
+   sodipodi:docname="Pyramid.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --secondary1: #6e2e9f;
+      --primary1: #ffb347;
+      --primary2: #0a963a;
+      --lightText: lightgrey;
+      --darkText: dark-grey;
+    }
+
+    text {
+      font: 400 12px/1.5 -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Apple Color Emoji",Roboto,Helvetica,Arial,sans-serif;
+    }
+  </style>
+  <path id="top" fill="var(--secondary1)" d="M 122,54 91,1 60,54 H 122" />
+  <text x="90" y="38" text-anchor="middle" font-size="18" fill="var(--lightText)">UI</text>
+  <path id="middle" fill="var(--primary1)" d="M 148,101 122,54 60,54 34,101 H 148" />
+  <text x="90" y="80" text-anchor="middle" font-size="18" fill="var(--darkText)">Integration</text>
+  <path id="bottom" fill="var(--primary2)" d="M 34,101 8,148 H 174 L 148,101 H 34" />
+  <text x="90" y="125" text-anchor="middle" font-size="18" fill="var(--darkText)">Unit</text>
+</svg>

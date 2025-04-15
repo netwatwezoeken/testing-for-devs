@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="170mm"
+   height="59mm"
+   viewBox="0 0 148.95302 58.10696"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="sociable.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+    --secondary1: #6e2e9f;
+    --primary1: #ffb347;
+    --primary2: #0a963a;
+    --lightText: lightgrey;
+    --darkText: dark-grey;
+    }
+
+    text {
+    font: 400 12px/1.5 -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Apple Color Emoji",Roboto,Helvetica,Arial,sans-serif;
+    }
+  </style>
+  <g id="layer1" transform="translate(-52.617106,-32.559778)">
+    <g id="implementations" class="fragment fade-out" data-fragment-index="2">
+      <path
+         id="related_socio_bottom"
+         fill="var(--secondary1)"
+         d="m 153.94854,69.068352 h 16.86063 c 1.23988,0 2.23805,0.998174 2.23805,2.238059 v 16.798448 c 0,1.239885 -0.99817,2.238059 -2.23805,2.238059 h -16.86063 c -1.23989,0 -2.23806,-0.998174 -2.23806,-2.238059 V 71.306411 c 0,-1.239885 0.99817,-2.238059 2.23806,-2.238059 z" />
+      <path
+         id="related_socio_top"
+         fill="var(--secondary1)"
+         d="m 154.47118,32.867496 h 16.86088 c 1.23989,0 2.23806,0.998175 2.23806,2.23806 v 16.798881 c 0,1.239885 -0.99817,2.238059 -2.23806,2.238059 h -16.86088 c -1.23988,0 -2.23806,-0.998174 -2.23806,-2.238059 V 35.105556 c 0,-1.239885 0.99818,-2.23806 2.23806,-2.23806 z" />
+    </g>
+    <g id="implementations-moved" class="fragment fade-in" data-fragment-index="2" transform="translate(35)">
+      <path
+         id="related_sol_top"
+         fill="var(--secondary1)"
+         d="m 153.94854,69.068352 h 16.86063 c 1.23988,0 2.23805,0.998174 2.23805,2.238059 v 16.798448 c 0,1.239885 -0.99817,2.238059 -2.23805,2.238059 h -16.86063 c -1.23989,0 -2.23806,-0.998174 -2.23806,-2.238059 V 71.306411 c 0,-1.239885 0.99817,-2.238059 2.23806,-2.238059 z" />
+      <path
+         id="related_sol_top"
+         fill="var(--secondary1)"
+         d="m 154.47118,32.867496 h 16.86088 c 1.23989,0 2.23806,0.998175 2.23806,2.23806 v 16.798881 c 0,1.239885 -0.99817,2.238059 -2.23806,2.238059 h -16.86088 c -1.23988,0 -2.23806,-0.998174 -2.23806,-2.238059 V 35.105556 c 0,-1.239885 0.99818,-2.23806 2.23806,-2.23806 z" />
+    </g>
+    <g id="mocks" class="fragment fade-in" data-fragment-index="2">
+      <rect
+         stroke="var(--primary1)"
+         style="fill:none;stroke-width:0.673168;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.673168, 2.01951;stroke-dashoffset:0;stroke-opacity:1"
+         id="mock_top"
+         width="21.336744"
+         height="21.274567"
+         x="152.16092"
+         y="32.896362"
+         ry="2.238059" />
+      <rect
+         stroke="var(--primary1)"
+         style="fill:none;stroke-width:0.673168;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.673168, 2.01951;stroke-dashoffset:0;stroke-opacity:1"
+         id="mock_bottom"
+         width="21.336744"
+         height="21.274567"
+         x="151.7906"
+         y="69.055588"
+         ry="2.238059" />
+    </g>
+    <g
+       id="base">
+      <rect
+         fill="var(--primary1)"
+         id="thing_under_test"
+         width="21.336744"
+         height="21.274567"
+         x="102.46414"
+         y="47.899902"
+         ry="2.238059" />
+      <path
+         stroke="var(--primary1)"
+         style="fill:#ffb347;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         d="m 123.76981,61.238897 27.81576,20.86269"
+         id="bottom_path" />
+      <path
+         stroke="var(--primary1)"
+         style="fill:#ffb347;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         d="m 123.76981,56.152718 28.42702,-12.90087"
+         id="top_path" />
+    </g>
+    <g id="test" class="fragment fade-in" data-fragment-index="1">
+      <rect
+         stroke="var(--primary2)"
+         fill="var(--primary2)"
+         style="stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="rect26"
+         width="17.387915"
+         height="17.387915"
+         x="77.988991"
+         y="-15.652721"
+         ry="2.1734893"
+         transform="matrix(0.68545673,0.72811337,-0.68545673,0.72811337,0,0)"
+         rx="0" />
+      <path
+         stroke="var(--primary2)"
+         style="stroke:#0a963a;stroke-width:1.08575;stroke-linecap:round;stroke-linejoin:round"
+         d="m 74.380557,57.945642 28.236243,0.09002"
+         id="path_to_thing" />
+      <path
+         stroke="var(--primary2)"
+         style="fill:none;stroke-width:4.7;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:18.8, 18.8"
+         d="m 260.50913,96.65166 c -11.43191,28.06016 -15.9354,74.82709 0.3468,106.35163 16.2822,31.52454 53.34857,47.80603 88.85713,39.49158 35.50857,-8.31445 69.45721,-41.22385 79.67652,-77.77175 C 439.6089,128.17522 426.09871,87.991111 402.02206,68.245082 377.94541,48.499054 343.30391,49.191883 316.80247,54.21509 290.30104,59.238297 271.94105,68.5915 260.50913,96.65166 Z"
+         id="test_scope"
+         transform="matrix(0.1885635,0,0,0.19319396,48.739897,30.255648)" />
+    </g>
+  </g>
+</svg>
