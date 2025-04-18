@@ -232,13 +232,14 @@
                             Refer to Extreme programming where test + code result in verification and confidence. " When I have written all the test I can imagine could possibly break and they all pass, I'm certain my code is correct. Other tests mght break, but at least I can point to what the system actually does as demonstrated by the tests.
                         </aside>
                     </section>
-                    <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
-                        <h2>Pyramid 🐪</h2>
+                    <section data-transition="none-in none-out" data-breadcrumb="Knowledge > Types & Shapes">
+                        <h2 >Pyramid</h2>
                         <div data-load="pyramid.svg"></div>
                     </section>
-                    <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
-                        <h2>Honeycomb 🐝</h2>
-                        <img class="r-stretch"  data-src="microservices-testing-honeycomb-2.png">
+                    <section data-transition="none-in none-out" animate="true" data-breadcrumb="Knowledge > Types & Shapes">
+                        <h2>Honeycomb</h2>
+<!--                        <h2 class="fragment fade-in" data-fragment-index="2">Honeycomb 2 🐝</h2>-->
+                        <div data-load="pyramid2hexagon.svg"></div>
                     </section>
                     <section data-transition="none-in fade-out" data-breadcrumb="Knowledge > Types & Shapes">
                         <h2>Trophy 🏆</h2>
@@ -568,6 +569,16 @@
                 highlight.highlightBlock(document.getElementById("fb"));
             });
 
+            Reveal.addEventListener('slidechanged',function(event)  {
+                if(event.currentSlide.getAttribute("animate") === 'true') {
+                    var animate = document.getElementsByName("animate");
+                    animate.forEach((child) => { child.beginElement() });
+                    if (animate) {
+                        animate.beginElement();
+                    }
+                }
+            });
+
             Reveal.addEventListener( 'ready', function( event ) {
                 var banners = '<div id="banners"><header \/><\/div>';
                 $('section').each(function (index, slide ) {
@@ -580,6 +591,8 @@
                         }
                     }
                 });
+
+
             });
         </script>
     </body>

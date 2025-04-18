@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="175mm"
+   height="148mm"
+   viewBox="0 0 175 148"
+   id="pyramid2"
+   sodipodi:docname="Pyramid.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style>
+    :root {
+      --secondary1: #6e2e9f;
+      --primary1: #ffb347;
+      --primary2: #0a963a;
+      --lightText: lightgrey;
+      --darkText: dark-grey;
+    }
+
+    text {
+      font: 400 12px/1.5 -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Segoe UI Emoji","Segoe UI Symbol","Apple Color Emoji",Roboto,Helvetica,Arial,sans-serif;
+    }
+  </style>
+
+  <g>
+    <polygon id="top" fill="var(--secondary1)" points="122,54 91,1 60,54">
+      <animate
+            attributeName="points"
+            name="animate"
+            begin="indefinite"
+            repea-tCount="indefinite"
+            fill="freeze"
+            type="transform"
+            dur="1s"
+            to="159,44 91,1 23,44"/>
+    </polygon>
+    <text x="90" y="38" text-anchor="middle" font-size="18" fill="var(--lightText)">
+      UI
+      <animate
+            attributeName="y"
+            name="animate"
+            begin="indefinite"
+            repeat-Count="indefinite"
+            fill="freeze"
+            type="transform"
+            dur="1s"
+            to="30"/>
+    </text>
+
+    <polygon id="top" fill="var(--primary1)" points="148,101 122,54 60,54 34,101">
+      <animate
+            attributeName="points"
+            name="animate"
+            begin="indefinite"
+            repeat-Count="indefinite"
+            fill="freeze"
+            type="transform"
+            dur="1s"
+            to="159,104 159,44 23,44 23,104"/>
+    </polygon>
+    <text x="90" y="80" text-anchor="middle" font-size="18" fill="var(--darkText)">
+      Integration
+      <animate
+            attributeName="y"
+            name="animate"
+            begin="indefinite"
+            repeat-Count="indefinite"
+            fill="freeze"
+            type="transform"
+            dur="1s"
+            to="76"/>
+    </text>
+
+    <polygon id="top" fill="var(--primary2)" points="34,101 8,148 174,148 148,101">
+      <animate
+            attributeName="points"
+            name="animate"
+            begin="indefinite"
+            repeat-Count="indefinite"
+            fill="freeze"
+            type="transform"
+            dur="1s"
+            to="23,104 91,148 91,148 159,104"/>
+    </polygon>
+    <text x="90" y="125" text-anchor="middle" font-size="18" fill="var(--darkText)">
+      Unit
+      <animate
+            attributeName="y"
+            name="animate"
+            begin="indefinite"
+            repeat-Count="indefinite"
+            fill="freeze"
+            type="transform"
+            dur="1s"
+            to="130"/>
+    </text>
+  </g>
+</svg>
